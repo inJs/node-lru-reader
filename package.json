@@ -1,0 +1,28 @@
+{
+  "name": "node-lru-reader",
+  "version": "1.0.0",
+  "description": "LRU 缓存的文件读取器",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inJs/node-lru-reader.git"
+  },
+  "keywords": [
+    "lru",
+    "file",
+    "reader",
+    "async"
+  ],
+  "author": "inJser",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/inJs/node-lru-reader/issues"
+  },
+  "homepage": "https://github.com/inJs/node-lru-reader#readme",
+  "dependencies": {
+    "lru-cache": "^4.0.1"
+  }
+}
