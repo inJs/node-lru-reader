@@ -1,6 +1,6 @@
 {
   "name": "node-lru-reader",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "LRU 缓存的文件读取器",
   "main": "index.js",
   "scripts": {
