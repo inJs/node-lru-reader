@@ -1,4 +1,4 @@
-# node-lru-reader 基于LRU缓存的文件阅读器
+# node-lru-reader based on LRU file reader
 
 ## Installation
 
@@ -8,16 +8,16 @@
 
 ```javascript
 var opts = {
-    staticPath: '静态资源目录',
-    ext: '文件后缀',
-    enableCache: [true], //未配置该项时， NODE_ENV === 'production'时同样开启缓存
-    notFound: '当超出静态目录范围或文件不存在时读取的文件'
+    staticPath: 'static path',
+    ext: 'file extname',
+    enableCache: [true], //if true or NODE_ENV === 'production', the cache enabled.
+    notFound: 'when path is unsafe, it's will work.'
     cacheOpts: {
-        //此处配置请见[https://github.com/isaacs/node-lru-cache]
+        //see[https://github.com/isaacs/node-lru-cache]
     }
 };
 
-// 未配置 cacheOpts 时， 该项默认配置为:
+// the default cache options
 var defCacheOpts = {
     max: 1000,
     length: function(n, key) {
@@ -29,7 +29,12 @@ var defCacheOpts = {
 
 var reader = require('node-lru-reader')(opts);
 
+var callback = function(err, data) {
+ //todo stuff
+}
+
 reader.readFile(path, callback);
 ```
-readFile 会为 callback 输出两个参数 `err, data`, 
+ 
+ 
 
