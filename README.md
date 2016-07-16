@@ -11,7 +11,7 @@ var opts = {
     staticPath: 'static path',
     ext: 'file extname',
     enableCache: [true], //if true or NODE_ENV === 'production', the cache enabled.
-    notFound: 'when path is unsafe, it's will work.'
+    notFound: 'when path is unsafe, it will be work.'
     cacheOpts: {
         //see[https://github.com/isaacs/node-lru-cache]
     }
